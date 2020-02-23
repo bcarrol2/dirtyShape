@@ -6,34 +6,47 @@
       background-color: black;
     }
 
-    div {
-    width: 25px;
-    height: 25px;
-    background: silver;
-    transition: width 2s, height 2s, transform 2s;
-    margin: 5px;
+    #mover {
+      background-color: #6633FF;
+      width: 120px;
+      height: auto;
+      transition: width 1s linear 0.5s;
+      padding: 5px;
     }
 
-    div:hover {
-    width: 100px;
-    height: 100px;
-    transform: rotate(180deg);
+    #mover:hover {
+      width: 800px;
+    }
+
+    #turnt {
+      width: 25px;
+      height: 25px;
+      background: silver;
+      transition: width 2s, height 2s, transform 2s;
+      margin: 5px;
+      text-align: center;
+    }
+
+    #turnt:hover {
+      width: 100px;
+      height: 100px;
+      transform: rotate(360deg);
     }
   </style>
   </head>
   <body>
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div id="mover">
+    <div id="turnt"><h4>D</h4></div>
+    <div id="turnt"><h4>I</h4></div>
+    <div id="turnt"><h4>R</h4></div>
+    <div id="turnt"><h4>T</h4></div>
+    <div id="turnt"><h4>Y</h4></div>
+    <div id="turnt"><h4>S</h4></div>
+    <div id="turnt"><h4>H</h4></div>
+    <div id="turnt"><h4>A</h4></div>
+    <div id="turnt"><h4>P</h4></div>
+    <div id="turnt"><h4>E</h4></div>
+    </div>
 
   </body>
 </html>

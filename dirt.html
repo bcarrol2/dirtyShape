@@ -7,20 +7,21 @@
     }
 
     #mover {
-      background-color: #6633FF;
-      width: 120px;
+      background-color: #FFFFCC;
+      width: 50px;
       height: auto;
-      transition: width 1s linear 0.5s;
+      transition: width 1s ease-out 0.5s;
       padding: 5px;
     }
 
     #mover:hover {
-      width: 800px;
+      width: 61%;
+      box-shadow: 5px 10px white;
     }
 
     #turnt {
-      width: 25px;
-      height: 25px;
+      width: 40px;
+      height: 15px;
       background: silver;
       transition: width 2s, height 2s, transform 2s;
       margin: 5px;
@@ -28,24 +29,50 @@
     }
 
     #turnt:hover {
-      width: 100px;
-      height: 100px;
-      transform: rotate(360deg);
+      /* width: 40px;
+      height: 25px; */
+      transform: rotate(180deg);
     }
+    
+    img {
+      width: 35%;
+      height: 400px;
+      float: right;
+      border-radius: 50%;
+      margin-top: 55px;
+      filter: blur(4px);
+    }
+
+    #rotating {
+		-webkit-animation: rotation 2s infinite linear;
+    }
+
+    @-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(359deg);
+		}
+		to {
+				-webkit-transform: rotate(0deg);
+		}
+}
+
   </style>
   </head>
   <body>
+      
+    <!-- <img id="rotating" src="galaxy.jpg"> -->
     <div id="mover">
-    <div id="turnt"><h4>D</h4></div>
-    <div id="turnt"><h4>I</h4></div>
-    <div id="turnt"><h4>R</h4></div>
-    <div id="turnt"><h4>T</h4></div>
-    <div id="turnt"><h4>Y</h4></div>
-    <div id="turnt"><h4>S</h4></div>
-    <div id="turnt"><h4>H</h4></div>
-    <div id="turnt"><h4>A</h4></div>
-    <div id="turnt"><h4>P</h4></div>
-    <div id="turnt"><h4>E</h4></div>
+    <div id="turnt"></div>
+    <div id="turnt"></div>
+    <div id="turnt"></div>
+    <div id="turnt"></div>
+    <div id="turnt"></div>
+    <br/>
+    <div id="turnt"></div>
+    <div id="turnt"></div>
+    <div id="turnt"></div>
+    <div id="turnt"></div>
+    <div id="turnt"></div>
     </div>
 
   </body>
